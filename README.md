@@ -62,5 +62,5 @@ amazon-linux-extras install epel -y
 yum install stress -y
 ```
 Your configuration should look like this:
-![](
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20102430.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20090330.png?raw=true)
