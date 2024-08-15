@@ -10,4 +10,4 @@ Errors or corrections? Contact [mesiwotsodakpah@gmail.com](mailto:mesiwotsodakpa
 <!--Final rev. for launch Oct 2020-->
 
 ## Architecture Diagram
-![](/images/autoscale-diagram)
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/autoscale-diagram.png?raw=true)
