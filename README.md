@@ -68,3 +68,4 @@ Your configuration should look like this:
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20102715.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20102904.png?raw=true)
 ![](
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20102934.png?raw=true)
