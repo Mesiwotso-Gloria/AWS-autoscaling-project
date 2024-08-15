@@ -47,3 +47,18 @@ The launch template will serve as the blueprint for creating the exact type of s
 12. Under **Storage**, leave all other configuration as default and choose **"gp3"** for **Volume type**
 13. Resource tags: **Key: Name**, **Value: autoscale-webserver**
 14. Under **Advanced details**, scroll down to the **User data** section and enter the following lines of code exactly as shown
+
+```
+#!/bin/bash -ex
+sudo su
+yum -y update
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+systemctl status httpd
+echo "<html>Hello World, welcome to my server</html>" > /var/www/html/index.html
+systemctl restart httpd
+amazon-linux-extras install epel -y
+yum install stress -y
+```
+Your configuration should look like this:
