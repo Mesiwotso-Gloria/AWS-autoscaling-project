@@ -141,3 +141,24 @@ Check your configuration below:
 Immediately you create your autoscaling group, you should see two new instances getting created in the EC2 console. This is because we specified a desired count of 2. Also note that they are automatically placed one in each AZ to support high availability.
 
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20124009.png?raw=true)
+
+## Test your web server
+Click on one of the web servers, copy the public IP or DNS name and paste it in your browser. You should see the following content:
+
+![](
+
+This means your apache web server is running and you are able to reach it from the internet. 
+
+## Restrict web traffic to servers
+
+With the current design, users are directly accessing our web server. We don't want that. That is why we created a load balancer. To restrict incoming HTTP traffic destined for our servers to only the load balancer, we need to update the web servers' security group to accept HTTP traffic from only our application load balancer. This means no request gets to our servers without first making it through the load balancer. 
+
+### Edit web server security group 
+
+1. Go to the **autoscale-webserver-sg** security group and click on **"Edit inbound rules"**.
+2. Delete the existing HTTP rule.
+3. Add a new HTTP rule. In the **Source** box, scroll down to select the security group of the load balancer. **Save rules**.
+4. You have successfully restricted traffic going to the servers to the load balancer.
+5. You should no longer be able to access your web server using the server IPs or DNS names. You should now be able to use the load balancer DNS name to access the servers. Test this out.
+
+![](
