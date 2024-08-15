@@ -26,4 +26,5 @@ A VPC is an isolated, private network you can create to run your workloads. You 
 10. Click **Create VPC**
 
 Your configuration should match what is shown below:
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20163913.png?raw=true)
 ![](
