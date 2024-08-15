@@ -83,4 +83,19 @@ A target group will route requests to the web servers we create. Our load balanc
 8. Register Targets: Leave as is. 
 9. Click **Create target group**
 
-![](
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20112959.png?raw=true)
+
+## Create Load Balancer
+An application load balancer acts as the entry point for traffic to our webservers. Instead of allowing users to access our application directly, we will use the load balancer to distribute traffic equally among our autoscaling group of web servers. This is better for load management, security and reliability of our application.
+
+1. Click on [Create load balancer](https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#SelectCreateELBWizard:) from the EC2 console to create a load balancer
+2. Type: **"Application Load Balancer"**
+3. Scheme: **"Internet-facing"**
+4. IP address type: **"IPV4"**
+5. VPC: Select the VPC you created
+6. Mappings: Check the box beside the two AZs listed
+7. Subnet: For each AZ selected, choose the public subnet in the dropdown menu
+8. At this point, go to the Security groups console and create a new security group for the load balancer. The inbound rule should allow HTTP traffic from anywhere. 
+9. Select this security group as the load balancer security group
+10. Listeners and routing: Leave protocol and port as **HTTP:80**. Select the target group you created as target group
+11. Leave every other config as default and click **Create load balancer**
