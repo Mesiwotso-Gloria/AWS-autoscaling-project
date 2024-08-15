@@ -139,3 +139,5 @@ Check your configuration below:
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20%20122038.png?raw=true)
 
 Immediately you create your autoscaling group, you should see two new instances getting created in the EC2 console. This is because we specified a desired count of 2. Also note that they are automatically placed one in each AZ to support high availability.
+
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20124009.png?raw=true)
