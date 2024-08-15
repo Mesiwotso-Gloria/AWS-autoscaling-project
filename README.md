@@ -134,3 +134,5 @@ The auto scaling group configures and controls how your application scales autom
 Check your configuration below:
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20120800.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20120836.png?raw=true)
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20120944.png?raw=true)
+![](
