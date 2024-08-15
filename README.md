@@ -27,4 +27,4 @@ A VPC is an isolated, private network you can create to run your workloads. You 
 
 Your configuration should match what is shown below:
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20163913.png?raw=true)
-![](
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20082848.png?raw=true)
