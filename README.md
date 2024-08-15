@@ -168,7 +168,7 @@ We will now simulate a scenario of high CPU usage on our web server to allow the
 
 We will SSH to our server and run a command to stress the server and this will raise CPU usage across our auto scaling group above 50%. This will make it respond by adding new servers until our maximum number of servers specified is reached. 
 
-![](
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20%20131643.png?raw=true)
 
 Observe your EC2 console after running this command and you will see new instances being added by the auto scaling group to handle the simulated surge in traffic. 
 
