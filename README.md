@@ -174,7 +174,7 @@ Observe your EC2 console after running this command and you will see new instanc
 
 If you stopped or terminated the instance on which CPU usage has been simulated, instances will get terminated from your auto scaling group accordingly (scale-in).
 
-![](
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot.png?raw=true)
 
 ## Conclusion
 You have built a load-balanced and highly available web application that auto scales out based on a target of CPU utilization. 
