@@ -10,4 +10,4 @@ Errors or corrections? Contact [mesiwotsodakpah@gmail.com](mailto:mesiwotsodakpa
 <!--Final rev. for launch Oct 2020-->
 
 ## Architecture Diagram
-![](/images/autoscale-diagram-Page-1.drawio2.png)
+![](/images/autoscale-diagram)
