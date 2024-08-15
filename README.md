@@ -99,4 +99,6 @@ An application load balancer acts as the entry point for traffic to our webserve
 9. Select this security group as the load balancer security group
 10. Listeners and routing: Leave protocol and port as **HTTP:80**. Select the target group you created as target group
 11. Leave every other config as default and click **Create load balancer**
+
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20115625.png?raw=true)
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20115706.png?raw=true)
