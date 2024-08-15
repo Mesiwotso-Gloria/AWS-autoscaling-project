@@ -145,7 +145,7 @@ Immediately you create your autoscaling group, you should see two new instances 
 ## Test your web server
 Click on one of the web servers, copy the public IP or DNS name and paste it in your browser. You should see the following content:
 
-![](
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20124826.png?raw=true)
 
 This means your apache web server is running and you are able to reach it from the internet. 
 
