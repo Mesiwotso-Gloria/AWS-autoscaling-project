@@ -161,4 +161,20 @@ With the current design, users are directly accessing our web server. We don't w
 4. You have successfully restricted traffic going to the servers to the load balancer.
 5. You should no longer be able to access your web server using the server IPs or DNS names. You should now be able to use the load balancer DNS name to access the servers. Test this out.
 
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20130255.png?raw=true)
+
+## Live Autoscaling Test
+We will now simulate a scenario of high CPU usage on our web server to allow the auto scaling group to respond. 
+
+We will SSH to our server and run a command to stress the server and this will raise CPU usage across our auto scaling group above 50%. This will make it respond by adding new servers until our maximum number of servers specified is reached. 
+
 ![](
+
+Observe your EC2 console after running this command and you will see new instances being added by the auto scaling group to handle the simulated surge in traffic. 
+
+If you stopped or terminated the instance on which CPU usage has been simulated, instances will get terminated from your auto scaling group accordingly (scale-in).
+
+![](
+
+## Conclusion
+You have built a load-balanced and highly available web application that auto scales out based on a target of CPU utilization. 
