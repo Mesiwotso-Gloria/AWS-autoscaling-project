@@ -28,3 +28,22 @@ A VPC is an isolated, private network you can create to run your workloads. You 
 Your configuration should match what is shown below:
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20163913.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20082848.png?raw=true)
+
+## Create a Launch Template 
+
+The launch template will serve as the blueprint for creating the exact type of server we need to meet our web server demands. A launch template can be modified to create new versions when you need to change a config.
+
+1. Click on [Create launch template](https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#CreateTemplate:) from the EC2 console to create a new launch template
+2. Launch template name - required = **"autoscale-webserver"**
+3. Check the **Provide guidance to help me set up a template that I can use with EC2 Auto Scaling** box
+4. Under **Application and OS Images (Amazon Machine Image) - required**, choose **Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type**
+5. Instance type = **"t2.micro"**
+6. Key pair - Create a new one or use existing key pair
+7. Subnet - **Don't include in launch template**
+8. Create security group = **"autoscale-webserver-sg"**
+9. Allow SSH and HTTP traffic from 0.0.0.0/0 (Ignore the warning about security group. We will edit it later)
+10. VPC - Select the VPC you created
+11. Under **Advanced network configuration**, choose **"Enable"** under **Auto-assign public IP**
+12. Under **Storage**, leave all other configuration as default and choose **"gp3"** for **Volume type**
+13. Resource tags: **Key: Name**, **Value: autoscale-webserver**
+14. Under **Advanced details**, scroll down to the **User data** section and enter the following lines of code exactly as shown
