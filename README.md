@@ -104,3 +104,31 @@ An application load balancer acts as the entry point for traffic to our webserve
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20115706.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20115013.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20%20115747.png?raw=true)
+![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20120350.png?raw=true)
+
+## Create Auto Scaling Group
+The auto scaling group configures and controls how your application scales automatically in response to varying traffic situations.
+
+1. Click on [Create Auto Scaling group](https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#CreateAutoScalingGroup:) from the EC2 console to create an auto scaling group
+2. Enter a name
+3. Choose the launch template you created. Click **Next**
+4. Select your webserver VPC created from the VPC step
+5. Under **Availability Zones and subnets**, select the two public subnets in your VPC, in different AZs. Click **Next** 
+
+***NB:** Note that you can use the auto scaling group to override your instance type config from the launch template*
+
+6. Under **Load balancing**, choose the option **"Attach to an existing load balancer"**
+7. Select **Choose from your load balancer target groups**
+8. Select the target group you created
+9. Select VPC Lattice service to attach: **"No VPC Lattice service"**
+10. Additional health check types - optional: **"Turn on Elastic Load Balancing health checks"**
+11. Leave every other config as default. **Next**
+12. Group size: Desired: **"2"**, Minimum: **"1"**, Maximum: **"4"**
+13. Scaling policies: **"Target Tracking Policy"**
+14. Metric type: **"Average CPU Utilization"**
+15. Target Value: **"50%"**
+16. Add notifications - optional (Skipped)
+17. Add tags - optional (Skipped)
+18. **Create Auto Scaling Group**
+
+Check your configuration below:
