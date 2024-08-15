@@ -69,3 +69,18 @@ Your configuration should look like this:
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20102904.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20%20123230.png?raw=true)
 ![](https://github.com/Mesiwotso-Gloria/AWS-autoscaling-project/blob/main/images/Screenshot%20102934.png?raw=true)
+
+## Create Target Group
+A target group will route requests to the web servers we create. Our load balancer will need this target group to know what set of servers to distribute traffic to. Our auto scaling group will also be associated with this target group so it launches our servers into the target group.
+
+1. Click on [Create target group](https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#CreateTargetGroup:) from the EC2 console to create a target group
+2. Choose a target type: **"Instances"**
+3. Target group name: **"autoscale-webserver"**
+4. Protocol: **"HTTP"**
+5. Port: **"80"**
+6. VPC: Select the VPC you created
+7. Leave every other value on this page as default. **Next**
+8. Register Targets: Leave as is. 
+9. Click **Create target group**
+
+![](
